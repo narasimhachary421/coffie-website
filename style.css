@@ -1,0 +1,67 @@
+body{
+    background-image:url(https://www.mycuppa.com.au/cdn/shop/files/mycuppa_coffee_page_1_desktop-c.jpg?v=1717299493&width=1400);
+    background-repeat: no-repeat;
+}
+ header,ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(253, 252, 251);
+    padding: 10px;
+    text-decoration: none;
+    column-gap: 50px;
+    list-style-type: none;
+}
+h1{
+    font-size: 50px;
+}
+center{
+    text-align: center;
+}
+#font{
+    color: rgb(87, 81, 81);
+}
+button{
+    background-color: rgb(226, 176, 101);
+    width: 100px;
+    height: 40px;
+}
+h6{
+    color: rgb(163, 160, 160);
+    font-size: 11px;
+}
+#four{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#four1{
+    justify-content: space-between;
+    align-items: center;
+}
+#four2{
+    justify-content: space-between;
+    align-items: center;
+}
+#four3{
+    justify-content: space-between;
+    align-items: center;
+}
+#four4{
+    justify-content: space-between;
+    align-items: center;
+}
+#five{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210827/pngtree-textured-abstract-beige-background-image_770439.jpg);
+}
+footer{
+    display: flex;
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-flower-shaded-beige-background-picture-image_1465057.jpg);
+    justify-content: space-between;
+    background-repeat: no-repeat;
+}
+#buttom,h3{
+    color: rgb(204, 196, 185);
+    align-items: center;
+    text-align: center;
+}
