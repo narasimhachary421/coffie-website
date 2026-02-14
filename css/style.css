@@ -1,0 +1,88 @@
+/*
+  Coffie — CSS
+  Clean, modern coffee-themed styles using CSS Grid/Flexbox
+*/
+:root{
+  --bg:#fffaf4; /* warm cream */
+  --surface:#fff6f0;
+  --brown-900:#3b2f2f;
+  --brown-700:#6b4b3b;
+  --accent:#c28b5b; /* coffee crema */
+  --muted:#6b6b6b;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:var(--brown-900);background:var(--bg);line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+/* Header */
+.site-header{background:linear-gradient(180deg,var(--surface),#fff);border-bottom:1px solid rgba(60,40,30,.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.brand{font-weight:700;color:var(--brown-900);text-decoration:none;font-size:1.25rem}
+#nav-toggle{display:none;border:0;background:transparent;font-size:1rem}
+.nav a{margin-left:1rem;color:var(--brown-700);text-decoration:none;padding:.25rem .35rem;border-radius:6px;transition:background .18s,transform .12s}
+.nav a:hover{background:rgba(194,139,91,.08);transform:translateY(-2px)}
+
+/* Hero */
+.hero{padding:3rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+.hero-copy h1{font-size:2rem;margin:0 0 .5rem}
+.lead{color:var(--muted);max-width:52ch}
+.hero-media img{max-width:100%;border-radius:12px}
+.hero-cta{margin-top:1rem}
+.btn{display:inline-block;background:var(--brown-900);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(60,40,30,.08)}
+.btn.ghost{background:transparent;color:var(--brown-900);border:1px solid rgba(60,40,30,.06)}
+
+/* Categories */
+.categories-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.cat{display:block;background:var(--surface);padding:1rem;border-radius:12px;text-decoration:none;color:inherit;box-shadow:0 8px 24px rgba(80,50,30,.04);text-align:center}
+.cat img{width:64px;height:64px}
+
+/* Features */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.features article{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 6px 14px rgba(60,40,30,.04)}
+
+/* Product cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.card{background:#fff;border-radius:12px;padding:1rem;text-decoration:none;color:inherit;box-shadow:0 8px 28px rgba(60,40,30,.05);display:flex;flex-direction:column;gap:.5rem}
+.card-image{width:100%;height:180px;object-fit:cover;border-radius:8px}
+.card h3{margin:.2rem 0}
+.muted{color:var(--muted)}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(10,10,10,.45);padding:1rem}
+.modal[aria-hidden="false"]{display:flex}
+.modal-panel{background:#fff;padding:1rem;border-radius:12px;max-width:480px;width:100%;box-shadow:0 24px 60px rgba(30,20,20,.18)}
+.modal-close{float:right;border:0;background:transparent}
+form label{display:block;margin:.5rem 0;color:var(--brown-700)}
+form input,form textarea{width:100%;padding:.6rem;border:1px solid rgba(60,40,30,.06);border-radius:8px}
+.form-actions{text-align:right;margin-top:.6rem}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(60,40,30,.04);padding:1rem 0;margin-top:2rem;background:#fff}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-nav a{margin-left:.75rem;color:var(--muted);text-decoration:none}
+
+/* Responsive */
+@media(max-width:980px){
+  .hero-inner{grid-template-columns:1fr}
+  .categories-grid{grid-template-columns:repeat(2,1fr)}
+  .features-grid{grid-template-columns:1fr}
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  #nav-toggle{display:inline-block}
+  .nav{position:absolute;right:1rem;top:68px;background:#fff;padding:.8rem;border-radius:8px;box-shadow:0 8px 20px rgba(10,20,30,.08);display:none}
+  .nav.open{display:block}
+  .card-grid{grid-template-columns:1fr}
+  .categories-grid{grid-template-columns:1fr}
+}
+
+/* Small helpers */
+.lead-small{font-size:.95rem;color:var(--muted)}
+
+/* Accessibility focus */
+.nav a:focus,.btn:focus{outline:3px solid rgba(194,139,91,.16);outline-offset:3px}
+
+/* End of CSS */

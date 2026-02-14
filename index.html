@@ -1,105 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-    
-        <img src="https://corretto.qodeinteractive.com/wp-content/themes/corretto/assets/img/logo-light.png" width="130px">
-        <div id="notice">
-            <ul>
-                <li>HOME</li>
-                <li>PAGES</li>
-                <li>PORTFOLID</li>
-                <li>BLOG</li>
-                <li>SHOP</li>
-                <li>ELEMENT</li>
-                <img src="https://img.icons8.com/?size=100&id=9671&format=png&color=FFFFFF" width="30px">
-                <img src="https://img.icons8.com/?size=100&id=111487&format=png&color=FFFFFF" width="30px">
-                <img src="https://img.icons8.com/?size=100&id=w3-HRY0z8wQY&format=png&color=FFFFFF" width="30px">
-            </ul>
-        </header>
-            <div class="part1">
-                <div> 
-                    <center id="button"> 
-                        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png" width="200px" >
-                          <h1 style="color: rgb(235, 230, 225);"> <i>
-                            coffee factory
-                        </i></h1>
-                        <br>
-                        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png">
-                        <h3>Caffeine in coffee can enhance physical performance by increasing adrenaline levels in the blood,<br> which helps improve endurance and strength during exercise.</h3>
-                        <button>Buy Here</button>
-                     </center>
-                    </header>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div>
-                    <center style="color: rgb(41, 34, 34);">
-                    <div class="part2">
-                    <h1 font style="color: rgb(20, 26, 24);">Our Delicious Offer</h1>
-                    <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png"> 
-                    <br>
-                    <div>
-                        <h4 id="font">Moderate coffee consumption has been linked to a reduced risk of heart disease and stroke. It may help reduce blood pressure, improve blood vessel function, and reduce inflammation</h4>
-                        <div id="four">
-                           <div id="four1"><img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-5.png"><br>
-                            <h4>Types of Coffee</h4>
-                            <h6> espresso, the creamy and balanced cappuccino, <br> smooth and milky latte, and the milder americano, </h6></div>
-                           <div id="four2"> 
-                             <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-8.png"><h4>Coffee To Go</h4>
-                            <h6>Lorem ipsum dolor sit ametal,<br> consectetuer adipiscing elitus. Aeneantos commodo</h6>
-                        </div>
-                        <div id="four3">
-                            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-7.png"><h4>Coffee & Pastry</h4>
-                            <h6>Lorem ipsum dolor sit ametal,<br> consectetuer adipiscing elitus. Aeneantos commodo</h6>
-                        </div>
-                        <div id="four4">
-                            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-6.png"><h4>Bean Varieties</h4>
-                            <h6>Lorem ipsum dolor sit ametal,<br> consectetuer adipiscing elitus. Aeneantos commodo</h6>
-                        </div>
-                        </div>
-                        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffie — Digital Coffee Catalogue</title>
+    <meta name="description" content="Coffie digital catalogue for dealers — specialty coffee, roasts and sourcing information.">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Coffie</a>
+        <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav id="primary-nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Coffee Catalogue</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                    </center>
-                    </div>
-            
-                    </div>
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Coffie — Specialty Coffee Catalogue</h1>
+            <p class="lead">A curated collection of single-origin and blended coffees. Share this catalogue with dealers and customers — no prices, just professional product information.</p>
+            <div class="hero-cta">
+              <a class="btn" href="products.html">View Catalogue</a>
+              <a class="btn ghost" href="contact.html">Become a Dealer</a>
             </div>
+          </div>
+          <div class="hero-media">
+            <img src="imgs/hero-coffee.jpg" alt="Cup of coffee illustration" width="420" height="300">
+          </div>
         </div>
-                    
-            </div>
+      </section>
+
+      <section class="container categories">
+        <h2>Featured Categories</h2>
+        <div class="grid categories-grid">
+          <a class="cat" href="products.html#single-origin">
+            <img src="imgs/coffee-plantation.jpg" alt="Single origin">
+            <h3>Single Origin</h3>
+            <p>Distinct terroir-driven coffees with clear flavor profiles.</p>
+          </a>
+          <a class="cat" href="products.html#blends">
+            <img src="imgs/coffee-roasting.jpg" alt="Blends">
+            <h3>Blends</h3>
+            <p>Balanced blends designed for consistency and body.</p>
+          </a>
+          <a class="cat" href="products.html#specialties">
+            <img src="imgs/coffee-brewing.jpg" alt="Specialty">
+            <h3>Limited Releases</h3>
+            <p>Seasonal and micro-lot coffees — limited availability.</p>
+          </a>
         </div>
+      </section>
+
+      <section class="container features">
+        <h2>Why use this catalogue?</h2>
+        <div class="grid features-grid">
+          <article>
+            <h3>Dealer Ready</h3>
+            <p>Designed for easy sharing with customers and point-of-sale displays.</p>
+          </article>
+          <article>
+            <h3>No Prices</h3>
+            <p>Pricing handled by dealers to preserve flexibility in offers.</p>
+          </article>
+          <article>
+            <h3>Mobile Friendly</h3>
+            <p>Clean layout that adapts to phones and tablets for on-the-go demos.</p>
+          </article>
         </div>
-    <div id="five">
-        <center>
-    <footer">
-    <br>
-    <br>
-    <br>
-       <i> <h1>The Coffee Herald</h1></i>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png">
-        <h3 style="color: rgb(70, 73, 77);">Drinking coffee boosts energy, improves focus, and may reduce the risk of certain diseases, all while offering a comforting,<br> flavorful experience.</h3>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Coffie — Digital Catalogue</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Catalogue</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </footer>
-        </center>
 
-    
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

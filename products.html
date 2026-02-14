@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Catalogue — Coffie</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Coffie</a>
+        <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav id="primary-nav" class="nav">
+          <a href="index.html">Home</a>
+          <a href="products.html">Coffee Catalogue</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Coffee Catalogue</h1>
+      <p class="muted">Explore our curated coffees. To request pricing or samples, use "Request Info" — prices are not displayed.</p>
+
+      <section id="single-origin" class="product-section">
+        <h2>Single Origin</h2>
+        <div class="grid card-grid">
+          <article class="card">
+            <img src="imgs/coffee-ethiopian.jpg" alt="Ethiopian Yirgacheffe" class="card-image">
+            <h3>Ethiopian Yirgacheffe</h3>
+            <p class="muted">Origin: Ethiopia — Roast: Light — Notes: Floral, jasmine, citrus.</p>
+            <p><button class="btn" data-product="Ethiopian Yirgacheffe">Request Info</button></p>
+          </article>
+
+          <article class="card">
+            <img src="imgs/coffee-medium-roast.jpg" alt="Colombian Huila" class="card-image">
+            <h3>Colombian Huila</h3>
+            <p class="muted">Origin: Colombia — Roast: Medium — Notes: Chocolate, caramel, balanced acidity.</p>
+            <p><button class="btn" data-product="Colombian Huila">Request Info</button></p>
+          </article>
+
+          <article class="card">
+            <img src="imgs/coffee-light-roast.jpg" alt="Kenyan AA" class="card-image">
+            <h3>Kenyan AA</h3>
+            <p class="muted">Origin: Kenya — Roast: Medium-Light — Notes: Blackcurrant, bright acidity, clean finish.</p>
+            <p><button class="btn" data-product="Kenyan AA">Request Info</button></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blends" class="product-section">
+        <h2>Blends</h2>
+        <div class="grid card-grid">
+          <article class="card">
+            <img src="imgs/coffee-dark-roast.jpg" alt="House Blend" class="card-image">
+            <h3>House Blend</h3>
+            <p class="muted">Roast: Medium — Notes: Nutty, chocolate, versatile for espresso and filter.</p>
+            <p><button class="btn" data-product="House Blend">Request Info</button></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="specialties" class="product-section">
+        <h2>Limited Releases</h2>
+        <div class="grid card-grid">
+          <article class="card">
+            <img src="imgs/coffee-roasting.jpg" alt="Microlot - Panama" class="card-image">
+            <h3>Microlot — Panama</h3>
+            <p class="muted">Small-batch microlot with unique cup profile and traceability.</p>
+            <p><button class="btn" data-product="Microlot - Panama">Request Info</button></p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Coffie</p>
+        <nav class="footer-nav"><a href="index.html">Home</a><a href="products.html">Catalogue</a></nav>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button id="modal-close" class="modal-close">Close</button>
+        <h3 id="modal-title">Request Info</h3>
+        <form id="quote-form">
+          <!-- Commented fields: the form uses mailto fallback for demo deployments -->
+          <label>Name<input name="name" required></label>
+          <label>Company<input name="company"></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Product reference<textarea name="product" rows="2"></textarea></label>
+          <div class="form-actions"><button type="submit" class="btn">Send Request</button></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

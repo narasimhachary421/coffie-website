@@ -1,3 +1,65 @@
+/* existing styles */
+body { font-family: Arial, sans-serif }
+header,ul{ display: flex; justify-content: space-between; align-items: center; color: rgb(253, 252, 251); padding: 10px; text-decoration: none; column-gap: 50px; list-style-type: none; }
+:root{
+    --brand:#1e8a4a;
+    --accent:#0b6fbf;
+    --muted:#6b7280;
+    --bg:#ffffff;
+    --surface:#f7faf7;
+    --radius:10px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;line-height:1.45;color:#0f1724;background:var(--bg);margin:0}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--surface),#fff);border-bottom:1px solid #e6eef0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.brand{color:var(--brand);font-weight:700;text-decoration:none;font-size:1.15rem}
+#nav-toggle{display:none;border:0;background:transparent;font-size:1rem}
+.nav a{margin-left:1rem;color:#0f1724;text-decoration:none}
+.hero{padding:3rem 0;background:linear-gradient(180deg,#f2fbf6,transparent)}
+.hero-inner h1{font-size:2rem;margin:0 0 .5rem}
+.hero-inner p{color:var(--muted);margin:0 0 1rem}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--brand);border:1px solid rgba(30,138,74,.12)}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.grid{display:grid}
+.card-grid{grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{display:block;background:#fff;border-radius:8px;padding:1rem;text-decoration:none;color:inherit;box-shadow:0 6px 18px rgba(10,20,30,.04)}
+.card-media{height:80px;display:flex;align-items:center;justify-content:center;margin-bottom:.6rem}
+.features article{background:#fff;padding:1rem;border-radius:8px}
+.showcase h2,.features h2{margin-top:0}
+.site-footer{border-top:1px solid #e6eef0;padding:1rem 0;margin-top:2rem;background:#fff}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-nav a{margin-left:.75rem;color:var(--muted);text-decoration:none}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(6,8,10,.45);padding:1rem}
+.modal[aria-hidden="false"]{display:flex}
+.modal-panel{background:#fff;padding:1rem;border-radius:10px;max-width:480px;width:100%;box-shadow:0 12px 30px rgba(10,20,30,.12)}
+.modal-close{float:right;border:0;background:transparent}
+form label{display:block;margin:.5rem 0;color:#0f1724}
+form input,form textarea{width:100%;padding:.5rem;border:1px solid #e6eef0;border-radius:6px}
+.form-actions{text-align:right;margin-top:.6rem}
+
+/* Responsive */
+@media(max-width:900px){
+    .features-grid{grid-template-columns:1fr}
+    .card-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+    #nav-toggle{display:inline-block}
+    .nav{position:absolute;right:1rem;top:68px;background:#fff;padding:.8rem;border-radius:8px;box-shadow:0 8px 20px rgba(10,20,30,.08);display:none}
+    .nav.open{display:block}
+    .header-inner{align-items:center}
+}
+
+/* Utility */
+.ghost{background:transparent}
+.muted{color:var(--muted)}
+
+/* small tweaks */
+h1,h2,h3{color:#06232a}
 body{
     background-image:url(https://www.mycuppa.com.au/cdn/shop/files/mycuppa_coffee_page_1_desktop-c.jpg?v=1717299493&width=1400);
     background-repeat: no-repeat;
